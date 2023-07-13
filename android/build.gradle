@@ -1,0 +1,51 @@
+buildscript {
+    ext.kotlin_version = '1.7.10'
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
+// android {
+//     // Add any required Android configurations here
+//     buildTypes {
+//         release {
+//             // Configuration for the release build type
+//             // For example, minifyEnabled, proguardFiles, etc.
+//         }
+//         debug {
+//             // Configuration for the debug build type
+//             // For example, applicationIdSuffix, versionNameSuffix, etc.
+//         }
+//     }
+
+// }
+
+// dependencies {
+//     implementation 'com.android.support:support-annotations:28.0.0'
+// }
+

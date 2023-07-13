@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1017757398152",
+    "project_id": "doctur-9284c",
+    "storage_bucket": "doctur-9284c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017757398152:android:c8832eb8461dfec05f5b3d",
+        "android_client_info": {
+          "package_name": "com.example.doc_tur"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017757398152-f6qmfkqc9mlq6bkh8nollk4co31d8qun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOrCVACgFgp5eGu-n495lcqZKYpBzP0oE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1017757398152-f6qmfkqc9mlq6bkh8nollk4co31d8qun.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1017757398152-pgv3ejehkpogbrvrge89i5ssvlsahgok.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.docTur"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
